@@ -3,7 +3,7 @@ import com.sun.xml.internal.xsom.XSComplexType;
 import javax.xml.bind.SchemaOutputResolver;
 import java.util.Scanner;
 
-public class Dayofweek {
+public class smallestnumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);    //System.in is a standard input stream
         //int a = sc.nextInt();
