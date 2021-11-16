@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Numbersrrange {
+public class Numbersarrange {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);    //System.in is a standard input stream
         System.out.println("Enter the number:");
@@ -10,7 +10,7 @@ public class Numbersrrange {
          * This loop checks for each digit starting from 0 to 9.
          * In case of ascending order it should be 0 to 9.
          */
-        for (int i = 9; i >= 0; i--) {
+        for (int i = 0; i <= 9; i++) {
             int tmpNumber = number;
             while (tmpNumber > 0) {
                 int digit = tmpNumber % 10;
