@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class loweruppercase {
+public class LowerUpperCase {
     public static void main(String[] args) {
         char ch;
         Scanner sc = new Scanner(System.in);
