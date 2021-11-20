@@ -1,5 +1,5 @@
 package OOPSAssignments;
-public class MethodOverRiding {
+public class AddingNumbers {
 
     static int addition(int num1, int num2){
         int res = num1 + num2 ;
@@ -11,9 +11,9 @@ public class MethodOverRiding {
         return(res);
     }
 }
-class MethodOverridingMain extends MethodOverRiding {
+class MethodOverridingMain extends AddingNumbers {
     public static void main(String[] args) {
-        System.out.println(MethodOverRiding.addition(6, 5));
-        System.out.println(MethodOverRiding.addition("Thoughtworks", "Vapasi"));
+        System.out.println(AddingNumbers.addition(6, 5));
+        System.out.println(AddingNumbers.addition("Thoughtworks", "Vapasi"));
     }
 }
