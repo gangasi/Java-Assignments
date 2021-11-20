@@ -11,7 +11,7 @@ public class AddingNumbers {
         return(res);
     }
 }
-class MethodOverridingMain extends AddingNumbers {
+class MethodOverloadingMain extends AddingNumbers {
     public static void main(String[] args) {
         System.out.println(AddingNumbers.addition(6, 5));
         System.out.println(AddingNumbers.addition("Thoughtworks", "Vapasi"));
