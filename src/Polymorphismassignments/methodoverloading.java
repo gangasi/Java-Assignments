@@ -1,33 +1,37 @@
-import java.util.Scanner;
+package OOPSAssignments;
 
-public class methodoverloading {
+import java.util.Scanner;
+//methodOverloading concept
+public class MethodOverLoading {
     public static void main(String[] args) {
 
-        //Adding 2 numbers
+        //Largest of 2 numbers
         Scanner sc = new Scanner(System.in);    //System.in is a standard input stream
         System.out.println("Enter first number:");
         int a = sc.nextInt();
         System.out.println("Enter second number:");
         int b = sc.nextInt();
-        float sum=addNumbers(a,b);
-        System.out.println("Sum is:" +sum);
+        float res1=largestNumbers(a,b);
+        System.out.println("Largest number is:" +res1);
 
-        //Adding third number
+        //Largest of three numbers
         System.out.println("Enter Third number:");
         float c = sc.nextFloat();
-         sum=addNumbers(a,b,c);
-        System.out.println("Sum is:" +sum);
-
+        float res2=largestNumbers(a,b,c);
+        System.out.println("Largest number is:" +res2);
+}
+    static int largestNumbers(int a,int b){
+        if(a>=b)
+           return a;
+        else
+            return b;
     }
-
-
-
-    static int addNumbers(int a,int b){
-        int sum=a+b;
-        return sum;
-    }
-    static float addNumbers(int a,int b,float c){
-        float sum=a+b+c;
-        return sum;
+    static float largestNumbers(int a,int b,float c){
+        if(a>b && a>c)
+            return a;
+        if(b>a && b>c)
+            return b;
+        else
+            return c;
     }
 }
